@@ -363,8 +363,8 @@ export default function ZaiqaTradersHeader() {
             {/* Share Options */}
             <div
               className={`absolute left-0 bottom-20 transition-all duration-300 ${shareOpen
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-4 pointer-events-none"
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4 pointer-events-none"
                 }`}
             >
               <div className="flex flex-col gap-3 mb-4">
@@ -427,8 +427,8 @@ export default function ZaiqaTradersHeader() {
               <button
                 onClick={() => setShareOpen(!shareOpen)}
                 className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all transform ${shareOpen
-                    ? "bg-purple-600 rotate-45"
-                    : "bg-gradient-to-r from-purple-300 to-purple-500 hover:bg-purple-600"
+                  ? "bg-purple-600 rotate-45"
+                  : "bg-gradient-to-r from-purple-300 to-purple-500 hover:bg-purple-600"
                   }`}
                 style={{ marginLeft: "36px" }}
               >
@@ -456,8 +456,8 @@ export default function ZaiqaTradersHeader() {
               key={index}
               onClick={() => goToSlide(index)}
               className={`transition-all duration-300 rounded-full ${index === currentSlide
-                  ? "w-10 h-2 bg-white"
-                  : "w-2 h-2 bg-white/50 hover:bg-white/75"
+                ? "w-10 h-2 bg-white"
+                : "w-2 h-2 bg-white/50 hover:bg-white/75"
                 }`}
             />
           ))}
@@ -618,57 +618,29 @@ export default function ZaiqaTradersHeader() {
               name: 'Barry Callebaut Dark Cocoa Powder',
               price: 'Rs.1,420.00',
               originalPrice: 'Rs.29,500.00',
-              image1: '/p1_image_1.jpg',
-              image2: '/p1_image_2.jpg',
+              image1: '/p9_image_1.jpg',
+              image2: '/p9_image_2.jpg',
               sale: true
             },
             {
               name: 'Callebaut Milk Chocolate Callets 33% 823',
               price: 'Rs.3,330.00',
-              image1: '/p2_image_1.jpg',
-              image2: '/p2_image_2.jpg',
+              image1: '/p10_image_1.jpg',
+              image2: '/p10_image_2.jpg',
               sale: false
             },
             {
               name: 'Master Martini Shine Milk Chocolate Buttons',
               price: 'Rs.810.00',
-              image1: '/p3_image_1.jpg',
-              image2: '/p3_image_2.jpg',
+              image1: '/p11_image_1.jpg',
+              image2: '/p11_image_2.jpg',
               sale: false
             },
             {
               name: 'Callebaut Dark Chocolate Callets 54% 811',
               price: 'Rs.3,260.00',
-              image1: '/p4_image_1.jpg',
-              image2: '/p4_image_2.jpg',
-              sale: false
-            },
-            {
-              name: 'Chocolate Chips',
-              price: 'Rs.510.00',
-              image1: '/p5_image_1.jpg',
-              image2: '/p5_image_2.jpg',
-              sale: false
-            },
-            {
-              name: 'Dezaan Dutch Processed Dark Cocoa Powder',
-              price: 'Rs.1,890.00',
-              image1: '/p6_image_1.jpg',
-              image2: '/p6_image_2.jpg',
-              sale: false
-            },
-            {
-              name: 'Callebaut Dark Chocolate Callets 70% 70-30-38',
-              price: 'Rs.3,640.00',
-              image1: '/p7_image_1.jpg',
-              image2: '/p7_image_2.jpg',
-              sale: false
-            },
-            {
-              name: 'Round Cake Pan GI',
-              price: 'Rs.250.00',
-              image1: '/p8_image_1.jpg',
-              image2: '/p8_image_2.jpg',
+              image1: '/p12_image_1.jpg',
+              image2: '/p12_image_2.jpg',
               sale: false
             }
           ].map((product, index) => (
@@ -721,6 +693,158 @@ export default function ZaiqaTradersHeader() {
           ))}
         </div>
       </div>
+
+      {/* Freshly Arrived Bakery Essentials Section */}
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Freshly Arrived Bakery Essentials
+          </h2>
+          <p className="text-lg text-gray-600">
+            Explore the latest bakery supplies, from mixers to molds. Perfect for home bakers and professionals seeking fresh trends and tools in Pakistan!
+          </p>
+        </div>
+
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            {
+              name: 'Barry Callebaut Dark Cocoa Powder',
+              price: 'Rs.1,420.00',
+              originalPrice: 'Rs.29,500.00',
+              image1: '/fa1_image_1.jpg',
+              image2: '/fa1_image_2.jpg',
+              sale: true
+            },
+            {
+              name: 'Callebaut Milk Chocolate Callets 33% 823',
+              price: 'Rs.3,330.00',
+              image1: '/fa2_image_1.jpg',
+              image2: '/fa2_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Master Martini Shine Milk Chocolate Buttons',
+              price: 'Rs.810.00',
+              image1: '/fa3_image_1.jpg',
+              image2: '/fa3_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Callebaut Dark Chocolate Callets 54% 811',
+              price: 'Rs.3,260.00',
+              image1: '/fa4_image_1.jpg',
+              image2: '/fa4_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Chocolate Chips',
+              price: 'Rs.510.00',
+              image1: '/fa5_image_1.jpg',
+              image2: '/fa5_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Dezaan Dutch Processed Dark Cocoa Powder',
+              price: 'Rs.1,890.00',
+              image1: '/fa6_image_1.jpg',
+              image2: '/fa6_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Callebaut Dark Chocolate Callets 70% 70-30-38',
+              price: 'Rs.3,640.00',
+              image1: '/fa7_image_1.jpg',
+              image2: '/fa7_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Round Cake Pan GI',
+              price: 'Rs.250.00',
+              image1: '/fa8_image_1.jpg',
+              image2: '/fa8_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Barry Callebaut Dark Cocoa Powder',
+              price: 'Rs.1,420.00',
+              originalPrice: 'Rs.29,500.00',
+              image1: '/fa9_image_1.jpg',
+              image2: '/fa9_image_2.jpg',
+              sale: true
+            },
+            {
+              name: 'Callebaut Milk Chocolate Callets 33% 823',
+              price: 'Rs.3,330.00',
+              image1: '/fa10_image_1.jpg',
+              image2: '/fa10_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Master Martini Shine Milk Chocolate Buttons',
+              price: 'Rs.810.00',
+              image1: '/fa11_image_1.jpg',
+              image2: '/fa11_image_2.jpg',
+              sale: false
+            },
+            {
+              name: 'Callebaut Dark Chocolate Callets 54% 811',
+              price: 'Rs.3,260.00',
+              image1: '/fa12_image_1.jpg',
+              image2: '/fa12_image_2.jpg',
+              sale: false
+            }
+          ].map((product, index) => (
+            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+              {/* Product Image Container */}
+              <div className="relative aspect-square overflow-hidden bg-gray-100">
+                {product.sale && (
+                  <span className="absolute top-3 left-3 z-10 bg-black text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Sale
+                  </span>
+                )}
+
+                {/* Default Image */}
+                <img
+                  src={product.image1}
+                  alt={product.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 transform-gpu will-change-transform group-hover:opacity-0"
+                />
+
+                {/* Hover Image */}
+                <img
+                  src={product.image2}
+                  alt={product.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 transform-gpu will-change-transform opacity-0 group-hover:opacity-100 cursor-pointer"
+                />
+              </div>
+
+              {/* Product Info */}
+              <div className="p-4">
+                <h3 className="text-base font-semibold text-gray-900 mb-2 min-h-12 group-hover:underline transition-all cursor-pointer">
+                  {product.name}
+                </h3>
+
+                <div className="flex items-center gap-2 mb-4">
+                  {product.originalPrice && (
+                    <span className="text-sm text-gray-500 line-through">
+                      {product.originalPrice}
+                    </span>
+                  )}
+                  <span className="text-lg font-bold text-gray-900">
+                    From {product.price}
+                  </span>
+                </div>
+
+                <button className="w-full py-2.5 border-2 border-purple-200 text-purple-600 rounded-full font-medium hover:bg-purple-100 transition-colors duration-200 transform-gpu will-change-transform cursor-pointer">
+                  Choose options
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 }
