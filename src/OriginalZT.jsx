@@ -8,9 +8,12 @@ import {
   ChevronRight,
   Share2,
   Plus,
+  Shield,
+  Star,
+  Truck
 } from "lucide-react";
 
-export default function ZaiqaTradersHeader() {
+export default function OriginalZT() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -159,6 +162,25 @@ export default function ZaiqaTradersHeader() {
       buttonColor: "bg-purple-300 hover:bg-purple-400",
     },
   ];
+
+  const features = [
+    {
+      icon: Shield,
+      title: '100% Authentic Brands',
+      description: 'We stock only verified, original products from trusted global and local baking brands. No imitations, ever.'
+    },
+    {
+      icon: Star,
+      title: 'Premium Quality Ingredients',
+      description: 'From couverture chocolate to top-grade flours, we bring you bakery-standard ingredients for flawless results.'
+    },
+    {
+      icon: Truck,
+      title: 'Fast & Reliable Nationwide Delivery',
+      description: 'Wherever you bake in Pakistan, we deliver your supplies quickly, safely, and on time. Guaranteed!'
+    }
+  ]
+
 
   // Auto-play slider
   useEffect(() => {
@@ -416,7 +438,7 @@ export default function ZaiqaTradersHeader() {
             {/* Main Share Button */}
             <div className="relative">
               <div
-                className="absolute -left-1 top-1/2 -translate-y-1/2 bg-purple-600 text-white rounded-[7px] px-2 py-4.5 text-xs font-medium tracking-wider"
+                className="absolute -left-1 top-1/2 -translate-y-1/2 bg-purple-600 text-white rounded-[7px] px-2 py-3 text-xs font-medium tracking-wider"
                 style={{
                   writingMode: "vertical-rl",
                   transform: "translateY(-60%) rotate(180deg)",
@@ -426,16 +448,16 @@ export default function ZaiqaTradersHeader() {
               </div>
               <button
                 onClick={() => setShareOpen(!shareOpen)}
-                className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all transform ${shareOpen
+                className={`relative z-10 w-9 h-9 rounded-full flex items-center justify-center shadow-lg transition-all transform ${shareOpen
                   ? "bg-purple-600 rotate-45"
                   : "bg-gradient-to-r from-purple-300 to-purple-500 hover:bg-purple-600"
                   }`}
-                style={{ marginLeft: "36px" }}
+                style={{ marginLeft: "28px", marginTop: "-70px" }}
               >
                 {shareOpen ? (
-                  <Plus className="w-6 h-6 text-white" />
+                  <Plus className="w-5.5 h-5.5 text-white" />
                 ) : (
-                  <Share2 className="w-5 h-5 text-white" />
+                  <Share2 className="w-4.5 h-4.5 text-white" />
                 )}
               </button>
             </div>
@@ -842,6 +864,56 @@ export default function ZaiqaTradersHeader() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+{/* Why choose us Section */}
+      <div className="w-full bg-gradient-to-br from-purple-300 via-purple-400 to-purple-500 py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Why Choose Zaiqa Traders?
+            </h1>
+            <p className="text-lg md:text-xl text-white/95 max-w-5xl mx-auto leading-relaxed">
+              At <span className="font-semibold">Zaiqa Traders</span>, we bring you the finest baking ingredients, tools, and accessories, all in one place. Whether you're a home baker or a professional pastry chef, our curated selection ensures top quality, reliability, and creative inspiration for every bake.
+            </p>
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center"
+                >
+                  {/* Icon */}
+                  <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
+                    <IconComponent className="w-16 h-16 text-purple-500" strokeWidth={2} />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    {feature.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-white/90 text-lg leading-relaxed max-w-sm">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Shop Now Button */}
+          <div className="text-center">
+            <button className="bg-white text-purple-400 font-semibold text-xl px-12 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+              Shop Now!
+            </button>
+          </div>
         </div>
       </div>
 

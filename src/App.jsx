@@ -1,11 +1,11 @@
-import MainNavbar from "./components/navbar";
+import ZaiqaTradersHeader from "./components/ZaiqaTradersHeader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
 
   return (
      <Router>
       <Routes>
-        <Route path="/" element={<MainNavbar />} />
+        <Route path="/" element={<ZaiqaTradersHeader />} />
       </Routes>
     </Router>
   )
