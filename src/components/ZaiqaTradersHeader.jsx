@@ -6,6 +6,7 @@ import TopCategoriesGrid from "./TopCategoriesGrid";
 import ProductCard from "./ProductCard";
 import WhyChooseUs from "./WhyChooseUs";
 import TopBrands from "./TopBrands";
+import Footer from "./Footer";
 
 export default function ZaiqaTradersHeader() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -242,6 +243,7 @@ export default function ZaiqaTradersHeader() {
 
       <WhyChooseUs />
       <TopBrands />
+      <Footer />
     </div>
   );
 }
