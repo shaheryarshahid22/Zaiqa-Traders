@@ -23,7 +23,7 @@ export default function TopCategoriesGrid() {
             { img: "category11.jpg", title: "Compound Chocolate" },
             { img: "category12.jpg", title: "Couverture Chocolate" },
           ].map((category, index) => (
-            <div key={index} className="relative h-64 rounded-2xl overflow-hidden cursor-pointer group">
+            <div key={index} className="relative h-60 rounded-2xl overflow-hidden cursor-pointer group">
               <div className="absolute inset-0 overflow-hidden">
                 <img
                   src={`/${category.img}`}
