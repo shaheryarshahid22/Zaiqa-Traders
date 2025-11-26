@@ -45,7 +45,7 @@ export default function HeroSlider({
             {slides[currentSlide].subtitle}
           </p>
           <button
-            className={`${slides[currentSlide].buttonColor} text-gray-800 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg`}
+            className={`${slides[currentSlide].buttonColor} text-purple-800 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer`}
           >
             {slides[currentSlide].buttonText}
           </button>

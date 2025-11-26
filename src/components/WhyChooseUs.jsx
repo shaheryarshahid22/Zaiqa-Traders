@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="text-center">
-          <button className="bg-white text-purple-400 font-semibold text-xl px-12 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+          <button className="bg-white text-purple-400 font-semibold text-xl px-12 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
             Shop Now!
           </button>
         </div>

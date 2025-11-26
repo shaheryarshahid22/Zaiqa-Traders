@@ -24,7 +24,7 @@ const Footer = () => {
                         <img
                             src="/zaiqa_logo.png"
                             alt="Zaiqa Traders Logo"
-                            className="w-32 h-32 object-contain mb-4 ml-6.5"
+                            className="w-45 h-45 object-contain mb-4 ml-2"
                         />
                         <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
                             Zaiqa Traders<sup className="text-lg text-purple-500">™</sup>
@@ -50,7 +50,7 @@ const Footer = () => {
                             Visit our Outlet
                         </h3>
 
-                        <div className="w-full h-64 rounded-xl overflow-hidden shadow-2xl border border-gray-200 mb-6">
+                        <div className="w-full h-48 rounded-xl overflow-hidden shadow-2xl border border-gray-200 mb-6">
                             <iframe
                                 title="Zaiqa Traders - Gujranwala"
                                 width="100%"

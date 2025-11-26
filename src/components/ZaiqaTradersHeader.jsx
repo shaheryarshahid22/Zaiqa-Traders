@@ -35,8 +35,7 @@ export default function ZaiqaTradersHeader() {
       name: "Bakeware & Baking Tools",
       hasDropdown: true,
       items: [
-        "Baking Pans", "Mixing Bowls", "Measuring Tools", "Spatulas",
-        "Whisks", "Rolling Pins", "Baking Sheets", "Molds",
+        "Bakeware", "Baking Tools",
       ],
     },
     {
