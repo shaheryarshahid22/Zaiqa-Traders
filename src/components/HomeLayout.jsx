@@ -1,4 +1,4 @@
-// src/ZaiqaTradersHeader.jsx
+// src/HomeLayout.jsx
 import React, { useState, useEffect, useRef } from "react";
 import HeroSlider from "./HeroSlider";
 import Sample from "./Sample";
@@ -8,7 +8,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import TopBrands from "./TopBrands";
 import Footer from "./Footer";
 
-export default function ZaiqaTradersHeader() {
+export default function HomeLayout() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
