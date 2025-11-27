@@ -10,20 +10,20 @@ export default function TopCategoriesGrid() {
       <div className="max-w-7xl mx-auto px-6 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { img: "category1.jpg", title: "Bakeware" },
-            { img: "category2.jpg", title: "Baking Tools" },
-            { img: "category3.jpg", title: "Decoration Tools" },
-            { img: "category4.jpg", title: "Cake Toppers" },
-            { img: "category5.jpg", title: "Stencils" },
-            { img: "category6.jpg", title: "Food & Gel Colors" },
-            { img: "category7.jpg", title: "Sprinkles" },
-            { img: "category8.jpg", title: "Ingredients" },
-            { img: "category9.jpg", title: "Packaging" },
-            { img: "category10.jpg", title: "Molds" },
-            { img: "category11.jpg", title: "Compound Chocolate" },
-            { img: "category12.jpg", title: "Couverture Chocolate" },
+            { img: 'top_category/category1.jpg', title: "Bakeware" },
+            { img: "top_category/category2.jpg", title: "Baking Tools" },
+            { img: "top_category/category3.jpg", title: "Decoration Tools" },
+            { img: "top_category/category4.jpg", title: "Cake Toppers" },
+            { img: "top_category/category5.jpg", title: "Stencils" },
+            { img: "top_category/category6.jpg", title: "Food & Gel Colors" },
+            { img: "top_category/category7.jpg", title: "Sprinkles" },
+            { img: "top_category/category8.jpg", title: "Ingredients" },
+            { img: "top_category/category9.jpg", title: "Packaging" },
+            { img: "top_category/category10.jpg", title: "Molds" },
+            { img: "top_category/category11.jpg", title: "Compound Chocolate" },
+            { img: "top_category/category12.jpg", title: "Couverture Chocolate" },
           ].map((category, index) => (
-            <div key={index} className="relative h-60 rounded-2xl overflow-hidden cursor-pointer group">
+            <div key={index} className="relative h-55 rounded-2xl overflow-hidden cursor-pointer group">
               <div className="absolute inset-0 overflow-hidden">
                 <img
                   src={`/${category.img}`}
@@ -35,10 +35,10 @@ export default function TopCategoriesGrid() {
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <h3
-                  className="text-white text-3xl font-bold"
+                  className="text-white text-4xl font-bold"
                   style={{
                     fontFamily: "Brush Script MT, cursive",
-                    textShadow: "2px 2px 2px rgba(147, 51, 234, 0.8)",
+                    textShadow: "2px 2px 2px rgba(180, 51, 234, 0.8)",
                   }}
                 >
                   {category.title}
