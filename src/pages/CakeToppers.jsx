@@ -132,7 +132,7 @@ export default function CakeToppers() {
                 <header className="absolute inset-x-0 top-0 z-20 mx-auto" style={{ maxWidth: "1400px" }}>
                     <SampleNavBar />
                 </header>
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('bakeware/bakeware_background_image.jpg')" }}>
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('cake_toppers/cake_toppers_background_image.jpg')" }}>
                     <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
                 </div>
                 <div className="relative z-10 flex items-center justify-center h-full">
