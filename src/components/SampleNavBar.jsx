@@ -119,7 +119,7 @@ export default function SampleNavBar() {
             <div className="flex items-center">
               <img src="/zaiqa_logo.png" alt="Zaiqa Traders Logo" className="w-20 h-20 object-contain" />
               <div className="ml-3">
-                <div className="text-xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+                <div className="text-xl font-bold bg-linear-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
                   Zaiqa Traders™
                 </div>
               </div>
