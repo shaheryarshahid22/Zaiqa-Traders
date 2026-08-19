@@ -20,7 +20,7 @@ export default function HomeLayout() {
     { name: 'Round Cake Pan GI', price: 'Rs.250.00', image1: 'handpicked/p8_image_1.jpg', image2: 'handpicked/p8_image_2.jpg', sale: false },
     { name: 'Barry Callebaut Dark Cocoa Powder', price: 'Rs.1,420.00', originalPrice: 'Rs.29,500.00', image1: 'handpicked/p9_image_1.jpg', image2: 'handpicked/p9_image_2.jpg', sale: true },
     { name: 'Callebaut Milk Chocolate Callets 33% 823', price: 'Rs.3,330.00', image1: 'handpicked/p10_image_1.jpg', image2: 'handpicked/p10_image_2.jpg', sale: false },
-    { name: 'Master Martini Shine Milk Chocolate Buttons', price: 'Rs.810.00', image1: 'handpicked/p11_image_1.jpg', image2: 'handpicked/p11_image_2.jpg', sale: false },
+    { name: 'Master Martini Shiny Milk Chocolate Buttons', price: 'Rs.810.00', image1: 'handpicked/p11_image_1.jpg', image2: 'handpicked/p11_image_2.jpg', sale: false },
     { name: 'Callebaut Dark Chocolate Callets 54% 811', price: 'Rs.3,260.00', image1: 'handpicked/p12_image_1.jpg', image2: 'handpicked/p12_image_2.jpg', sale: false },
   ];
   const freshArrivals = [
